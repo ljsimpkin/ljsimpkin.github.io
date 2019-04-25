@@ -16,8 +16,8 @@ Renting may not be the best for everything. We tend to look after our own car be
 
 # Profile Links
 
-# https://www.linkedin.com/in/liamsimpkin/
+https://www.linkedin.com/in/liamsimpkin/
 
-# http://ljsimpkin.github.io
+https://github.com/ljsimpkin
 
-# https://twitter.com/5impkin
+https://twitter.com/5impkin
