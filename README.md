@@ -13,6 +13,7 @@ Is redundancy and waste just an inevitable aspect of innovation and free market 
 
 Renting may not be the best for everything. We tend to look after our own car better than a rented one. But for products that incur no moral hazard (like light bulbs) perhaps renting is the next step to moving towards a more environmentally friendly economy. Another problem it might have is that it might decrease innovation as companies have fewer incentives to do so. Products aren’t mutating as much as they would because they are living longer lives. Whatever the solution may be, it would seem like with most complex issues, the optimum lies somewhere inbetween.
 
+to engage in the descussion click https://twitter.com/5impkin/status/1121549499300585473
 
 # Profile Links
 
