@@ -22,5 +22,3 @@ https://www.linkedin.com/in/liamsimpkin/
 https://github.com/ljsimpkin
 
 https://twitter.com/5impkin
-
-link test <a href="http://www.google.com">
