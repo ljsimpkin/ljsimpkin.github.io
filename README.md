@@ -1,4 +1,4 @@
-## Articles
+# Articles
 Built-in obsolescence 
 
 Built-in obsolescence is the intentional design of products with a limited life span. 
@@ -15,7 +15,7 @@ Renting may not be the best for everything. We tend to look after our own car be
 
 click <a href="https://twitter.com/5impkin/status/1121549499300585473">here</a> to engage in the descussion
 
-### Profile Links
+# Profile Links
 <a href="https://www.linkedin.com/in/liamsimpkin/">Linkedin</a>
 <a href="https://github.com/ljsimpkin">Github</a>
 <a href="https://twitter.com/5impkin">Twitter</a>
