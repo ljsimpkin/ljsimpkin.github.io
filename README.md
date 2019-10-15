@@ -1,4 +1,10 @@
 # Articles
+
+Interesting Websites
+ML project that turns drawings into reality: https://affinelayer.com/pixsrv/
+ML project that trains models and outputs commands: https://experiments.withgoogle.com/teachable-machine
+
+
 Built-in obsolescence 
 
 Built-in obsolescence is the intentional design of products with a limited life span. 
