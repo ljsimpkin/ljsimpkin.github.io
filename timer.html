@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Chrome, Safari and Opera syntax */
+:-webkit-full-screen {
+  background-color: yellow;
+}
+
+/* Firefox syntax */
+:-moz-full-screen {
+  background-color: yellow;
+}
+
+/* IE/Edge syntax */
+:-ms-fullscreen {
+  background-color: yellow;
+}
+
+/* Standard syntax */
+:fullscreen {
+  background-color: yellow;
+}
+
+/* Style the button */
+button {
+  padding: 20px;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+Set length of time in seconds: <input type="number" id="timeText" value=120>
+<button onclick="buttonFunction();">Start</button>
+<p></p>
+<label for="points">POINTS</label>
+<a type="number" id="points" value=20>20</a>
+<p></p>
+<a id="demo"></a> m
+<a id="demo2"></a> s
+
+<h2>Fullscreen with JavaScript</h2>
+
+<button onclick="openFullscreen();">Open Fullscreen</button>
+<button onclick="closeFullscreen();">Close Fullscreen</button>
+
+<script>
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  }
+}
+
+var sec = timeText.value;
+var points = 20;
+
+function buttonFunction(){
+  var myVar = setInterval(myTimer, 25);
+
+  function myTimer() {
+  document.getElementById("demo").innerHTML = Math.floor(sec / 60);
+  document.getElementById("demo2").innerHTML = sec % 60;
+  sec -= 1;
+  if (sec < 0){
+    clearInterval(myVar);
+    document.getElementById("points").innerHTML += 20;
+  }
+
+  if( window.innerHeight != screen.height) {
+    document.getElementById("points").innerHTML = 0;
+  }
+  }
+
+  sec = timeText.value;
+
+}
+</script>
+
+<p>Note: Internet Explorer 10 and earlier does not support the msRequestFullscreen() method.</p>
+
+</body>
+</html>
+
