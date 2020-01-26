@@ -32,23 +32,53 @@ button {
 </head>
 <body>
 
-Set length of time in seconds: <input type="number" id="timeText" value=120>
-<button onclick="buttonFunction();">Start</button>
+<h2>Time to make a point</h2>
+
+Set length of time in seconds: <input type="number" id="timeText" value=3>
+
 <p></p>
 <label for="points">POINTS</label>
 <a type="number" id="points" value=20>20</a>
 <p></p>
 <a id="demo"></a> m
 <a id="demo2"></a> s
+<p></p>
 
-<h2>Fullscreen with JavaScript</h2>
-
-<button onclick="openFullscreen();">Open Fullscreen</button>
+<button onclick="openFullscreen();">Start Fullscreen</button>
 <button onclick="closeFullscreen();">Close Fullscreen</button>
+<!-- <button onclick="buttonFunction();">Start</button> -->
+
 
 <script>
+var sec = timeText.value;
+var points = 20;
+
+function buttonFunction(){
+  var myVar = setInterval(myTimer, 1000);
+
+  function myTimer() {
+  document.getElementById("demo").innerHTML = Math.floor(sec / 60);
+  document.getElementById("demo2").innerHTML = sec % 60;
+  sec -= 1;
+  if (sec < 0){
+    clearInterval(myVar);
+    document.getElementById("points").innerHTML += 0;
+  }
+
+  if( window.innerHeight != screen.height) {
+    document.getElementById("points").innerHTML = 0;
+  }
+  }
+
+  sec = timeText.value;
+
+}
+
+// rename function buttonfunction
+
 var elem = document.documentElement;
 function openFullscreen() {
+  buttonFunction();
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.mozRequestFullScreen) { /* Firefox */
@@ -72,29 +102,6 @@ function closeFullscreen() {
   }
 }
 
-var sec = timeText.value;
-var points = 20;
-
-function buttonFunction(){
-  var myVar = setInterval(myTimer, 25);
-
-  function myTimer() {
-  document.getElementById("demo").innerHTML = Math.floor(sec / 60);
-  document.getElementById("demo2").innerHTML = sec % 60;
-  sec -= 1;
-  if (sec < 0){
-    clearInterval(myVar);
-    document.getElementById("points").innerHTML += 20;
-  }
-
-  if( window.innerHeight != screen.height) {
-    document.getElementById("points").innerHTML = 0;
-  }
-  }
-
-  sec = timeText.value;
-
-}
 </script>
 
 <p>Note: Internet Explorer 10 and earlier does not support the msRequestFullscreen() method.</p>
