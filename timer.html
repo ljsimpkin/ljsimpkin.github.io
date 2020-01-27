@@ -51,10 +51,14 @@ Set length of time in seconds: <input type="number" id="timeText" value=3>
 
 <script>
 var sec = timeText.value;
-var points = 20;
+var points = parseInt(document.getElementById("points").innerHTML);
+
+// console.log(typeof potential_pts);
+// console.log(potential_pts);
 
 function buttonFunction(){
   var myVar = setInterval(myTimer, 1000);
+  var potential_pts = parseInt(timeText.value);
 
   function myTimer() {
   document.getElementById("demo").innerHTML = Math.floor(sec / 60);
@@ -62,10 +66,13 @@ function buttonFunction(){
   sec -= 1;
   if (sec < 0){
     clearInterval(myVar);
-    document.getElementById("points").innerHTML += 0;
+    points += potential_pts;
+    document.getElementById("points").innerHTML = points;
+    // document.getElementById("points").innerHTML += 0;
   }
 
   if( window.innerHeight != screen.height) {
+    points = 0;
     document.getElementById("points").innerHTML = 0;
   }
   }
@@ -104,7 +111,7 @@ function closeFullscreen() {
 
 </script>
 
-<p>Note: Internet Explorer 10 and earlier does not support the msRequestFullscreen() method.</p>
+<p>Note: Only compatable with computer borowsers. Internet Explorer 10 and earlier does not support the msRequestFullscreen() method.</p>
 
 </body>
 </html>
