@@ -1,361 +1,52 @@
+<!DOCTYPE html>
 <html>
 <body>
-	<h1>Side Projects</h1>
-	<h2>Sound Detector</h2>
-	<h3>A table tennis app to help you keep track of when a ping pong ball bounces on a paddle.<h3>
-	<a href="https://ljsimpkin.github.io/table-tennis-counter">
-	<img alt="Qries" src="images/counter.png"
-	width="500" height="333">
-	</a>
 
-	<h2>Places Traveled</h2>
-	<h3>Developed to display bee data but coudn't get bee consent</h3>
-	<a href="https://ljsimpkin.github.io/Time-series-heat-map/">
-	<img alt="Qries" src="images/map.png"
-	width="500" height="333">
-	</a>
+<h1>Project Portfolio</h1>
 
-	<h2>Contact Tracing</h2>
-	<h3>A simple idea to help professionals build a contact tracing system by themselves.</h3>
-	<a href="https://liams-contact-tracing-tutorial.webflow.io/">
-	<img alt="Qries" src="images/contact_tracing.png"
-	width="500" height="333">
-	</a>
+<template>
+	<h2 id="title"></h2>
+	<h3 id="description"></h3>
+	<a id="url"><img  id="src"
+	width="400"></a>
+</template>
 
-	<h2>Face Recognition</h2>
-	<h3>Turn your face into a controller. This app can be used to play your own walk in music, fend off robbers with barking noises, and doesn't require training. Works on your GoPro too!</h3>
-	<a href="video/intro_music_ml.mp4">
-	<img alt="Qries" src="images/Obama.jpg"
-	width="220" height="333">
-	</a>
+<script type="text/javascript" src="projects.json"></script>
 
-	<h2>Productivity Motivator</h2>
-	<h3>Eliminate your bad habbits, stop randomly searching the web, and get points!</h3>
-	<a href="https://ljsimpkin.github.io/Motivation-App/">
-	<img alt="Qries" src="images/motivation.png"
-	width="500" height="333">
-	</a>
+<script>
 
-	<h2>Twitter Sentiment Analyser</h2>
-	<h3>Search for a Tweet and analyse people's feelings</h3>
-	<a href="https://github.com/ljsimpkin/Twitter/tree/master/sentiment%20to%20csv">
-	<img alt="Qries" src="images/twitter.png"
-	width="500" height="333">
-	</a>
+var temp = document.getElementsByTagName("template")[0];
+var clon = temp.content.cloneNode(true);
 
-	<h2>Libft</h2>
-	<h3>Yes, I recoded the C standard library. Even print character.</h3>
-	<a href="https://github.com/ljsimpkin/libft">
-	<img alt="Qries" src="images/putchar.png"
-	width="500" height="333">
-	</a>
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
 
-	<h2>Sudoku Solver</h2>
-	<h3>Don't do it by hand, get the computer to.</h3>
-	<a href="https://github.com/ljsimpkin/Sudoku">
-	<img alt="Qries" src="images/sudoku_small.JPG"
-	width="500" height="333">
-	</a>
+var i;
+var shuff = [];
+for (i = 0; i < projects.length; i++){
+	shuff[i] = i;
+}
 
-	<h2>What I learnt from my time doing door to door sales</h2>
-	<h3>Reflection on my uni sales job</h3>
-	<a href="https://drive.google.com/file/d/1ZTO0vycYsbK2uIRKVwc8cJe_O6gMWH9E/view?usp=sharing">
-	<img alt="Qries" src="images/sales.png"
-	width="500" height="250">
-	</a>
+shuff = shuffle(shuff);
+console.log(shuff)
 
-	<h2>Light pollution's effect on insects</h2>
-	<h3>A university research project on the effect of light at night</h3>
-	<a href="pages/light_pollution.html">abstract</a>
-
-	<h2>Built in Obsolescence Yarn</h2>
-	<h3>Are products built to last?</h3>
-	<a href="pages/obsolescence.html">Opinion</a>
-
-	<h2>Diving</h2>
-	<h3>So awesome! Then coo coo cachoo, find your way bag to the big ol' blue!</h3>
-<!-- 	<a href="https://github.com/ljsimpkin/Sudoku"> -->
-	<img alt="Qries" src="images/octopus.png"
-	width="500" height="333">
-	<img alt="Qries" src="images/shark.jpeg"
-	width="500" height="333">
-	<img alt="Qries" src="images/stingray.jpeg"
-	width="500" height="333">
-	<img alt="Qries" src="images/scuba.png"
-	width="500" height="333">
-	</a>
-
-	<h2>Neural Networks</h2>
-	<h3>Number identification project from Andrew Ng's Stanford Coursera class</h3>
-	<a href="https://github.com/ljsimpkin/stanford_ml/tree/master/machine-learning-ex4">
-	<img alt="Qries" src="images/numbers.png"
-	width="400" height="333">
-	</a>
-
-	<h2>Hiking</h2>
-	<h3>A quick stroll up Yosemite<h3>
-	<a href="https://www.facebook.com/photo?fbid=2676376232373937&set=a.155969371081315">
-	<img alt="Qries" src="images/hiking.jpg"
-	width="450" height="333">
-	</a>
-
-	<h2>Thai Kickboxing</h2>
-	<h3>Awesome training camp in Bangkok</h3>
-	<a href="https://www.facebook.com/sorvorapin.page">
-	<img alt="Qries" src="images/kick.JPG"
-	width="500" height="333">
-	</a>
-
-	<h2>Fast food in Japan</h2>
-	<h3>Healthier than my home cooked slow food</h3>
-	<a href="https://www.google.com/search?q=japanese+ramen&tbm=isch&ved=2ahUKEwiugI751djpAhWaALcAHeFVBRcQ2-cCegQIABAA&oq=japanese+ramen&gs_lcp=CgNpbWcQA1AAWABgthJoAHAAeACAAQCIAQCSAQCYAQCqAQtnd3Mtd2l6LWltZw&sclient=img&ei=DsrQXq7BHZqB3LUP4auVuAE&bih=672&biw=1280">
-	<img alt="Qries" src="images/raman.JPG"
-	width="300" height="333">
-	<img alt="Qries" src="images/burger.JPG"
-	width="500" height="333">
-	</a>
-
-	<h2>Abel Tasman Kayak</h2>
-	<h3>In an inflatable raft<h3> 
-	<a href="https://www.google.com/search?q=abel+tasman+national+park&tbm=isch&ved=2ahUKEwj96_PMqNvpAhUYIysKHYmTCrMQ2-cCegQIABAA&oq=abel+tasman+nat&gs_lcp=CgNpbWcQARgAMgQIABBDMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAUOQOWKgSYLkeaABwAHgAgAGJAogBpQaSAQUwLjMuMZgBAKABAaoBC2d3cy13aXotaW1n&sclient=img&ei=KS3SXr2zGJjGrAGJp6qYCw&bih=721&biw=1280&hl=en">
-	<img alt="Qries" src="images/kayak.JPG"
-	width="250" height="400">
-	</a>
-
-	<h2>The future of energy</h2>
-	<h3>Interview with Shannon, CMO of Solar Block<h3>
-	<a href="audio/solar_block.mp3">
-	<img alt="Qries" src="images/idea.JPG"
-	width="400" height="333">
-	</a>
-
-	<h2>The future of Genetics</h2>
-	<h3>Feel the excitment as founder Zack shares his thoughts.<h3>
-	<a href="audio/zack_genetics_clip.m4a">
-	<img alt="Qries" src="images/zbiotics.jpg"
-	width="400" height="333">
-	</a>
-
-	<h2>Twitter Project</h2>
-	<h3>These tweets took me longer than you might think<h3>
-	<a href="https://twitter.com/5impkin">
-	<img alt="Qries" src="images/twit.png"
-	width="400" height="333">
-	</a>
-
-	<h2>What I learnt about booking flights</h2>
-	<h3>Cheap ways to travel<h3>
-	<a href="pages/travel_tips.html">
-	<img alt="Qries" src="images/kayak.JPG"
-	width="250" height="333">
-	</a>
-
-	<h2>Juvenile Wisdom</h2>
-	<h3>My speech about opportunities for kids<h3>
-	<a href="https://drive.google.com/file/d/1zrq_r7U29YMYugRZkVoC0h7q4X4xe2LC/view?usp=sharing">
-	<img alt="Qries" src="images/speech.png"
-	width="550" height="333">
-	</a>
-
-	<h2>House rafts in Vietnam!</h2>
-	<h3>Kayaking around the islands<h3>
-	<a href="https://www.google.com/search?q=cat+ba+vietnam&tbm=isch&hl=en&ved=2ahUKEwiejPiYp9vpAhWbcH0KHR_9BF0QBXoECAEQRQ&biw=1280&bih=721">
-	<img alt="Qries" src="images/vietnam1.JPG"
-	width="400" height="333">
-	<img alt="Qries" src="images/vietnam2.JPG"
-	width="400" height="333">
-	</a>
-
-	<h2>What I learnt after meeting with a VC</h2>
-	<h3>Opinion on my experience<h3>
-	<a href="pages/vc.html">
-	<img alt="Qries" src="images/slides.JPG"
-	width="300" height="333">
-	</a>
-
-	<h2>42 Silicon Valley</h2>
-	<h3>Learnt to code!<h3>
-	<a href="https://www.42.us.org/">
-	<img alt="Qries" src="images/code.JPG"
-	width="300" height="333">
-	</a>
-
-	<h2>Earnt some Confetti</h2>
-	<h3>Hacker Rank<h3>
-	<a href="https://www.hackerrank.com/ljsimpkin">
-	<img alt="Qries" src="images/confetti1.jpg"
-	width="300" height="333">
-	</a>
-
-	<h2>Played with Python</h2>
-	<h3>Kaggle Course<h3>
-	<a href="https://www.kaggle.com/learn/certification/liamsimpkin/python">
-	<img alt="Qries" src="images/kaggle.jpeg"
-	width="300" height="200">
-	</a>
-
-	<h2>Completed a quarter triathlon</h2>
-	<h3>Next time the full!<h3>
-	<a href="https://www.peoplestri.co.nz/">
-	<img alt="Qries" src="images/running.JPG"
-	width="300" height="333">
-	</a>
-
-	<h2>Opportunity Alert</h2>
-	<h3>Notified when NZ companies get investment<h3>
-	<a href="https://fortune.com/newsletter/termsheet/">
-	<img alt="Qries" src="https://worksafe.govt.nz/assets/Tile/Icons/Infographic-Alert-navy-background.png"
-	width="300" height="200">
-	</a>
-
-	<h2>Berkley AI Course</h2>
-	<h3>Signed up to inclusive AI course<h3>
-	<a href="https://berkeley.us14.list-manage.com/track/click?u=1075bc7887a2db896be9973cf&id=c0a7165a5d&e=f365cdd717">
-	<img alt="Qries" src="https://static.easyrecrue.com/clients/1297_f4d49f5689ab867e9bf73b6ca48c01ee/telechargement.png"
-	width="300" height="200">
-	</a>
-
-	<h2>Brand Stunts</h2>
-	<h3>Pulling off crazy tricks in the name of brand! – "Work" as an ambassador (not me btw)<h3>
-	<a href="mailiam.me">
-	<img alt="Qries" src="images/ue1.png"
-	width="420" height="333">
-	<img alt="Qries" src="images/ue2.png"
-	width="420" height="333">
-	</a>
-
-	<h2>Economics Tutoring</h2>
-	<h3>It's all about supply and demand<h3>
-	<a href="https://www.google.com/search?q=supply+and+demand&tbm=isch&ved=2ahUKEwj5oKK07eHpAhWd3HMBHffLBJYQ2-cCegQIABAA&oq=pply+and+demandus&gs_lcp=CgNpbWcQA1AAWABgzSFoAHAAeACAAQCIAQCSAQCYAQCqAQtnd3Mtd2l6LWltZw&sclient=img&ei=nprVXvnZDJ25z7sP95eTsAk&bih=721&biw=1280">
-	<img alt="Qries" src="images/supandd.JPG"
-	width="450" height="333">
-	</a>
-
-	<h2>Ocean Swimming</h2>
-	<h3>Almost died completing the bean rock swim. The shortest distance between two points is a straight line, remember?<h3>
-	<a href="mailiam.me">
-	<img alt="Qries" src="images/bean rock.JPG"
-	width="550" height="333">
-	</a>
-
-	<h2>Mountain Biking</h2>
-	<h3>Get that leg pump<h3>
-	<a href="https://www.google.com/search?q=wanaka&sxsrf=ALeKk01P-Ra5C-PakNNvjk9zj50ZfrsFag:1591056980302&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjQ84KR7eHpAhV77HMBHcWqC9kQ_AUoAnoECB8QBA&biw=1280&bih=721">
-	<img alt="Qries" src="images/bike.JPG"
-	width="480" height="333">
-	</a>
-
-	<h2>Data Science</h2>
-	<h3>+ market research + idea creation. Working for a small startup involves a bit of everything.<h3>
-	<a href="http://www.mailiam.me">
-	<img alt="Qries" src="images/data.JPG"
-	width="333" height="333">
-	</a>
-
-	<h2>Sapiens</h2>
-	<h3>Challenge every idea that you've ever had<h3>
-	<a href="https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari-ebook/dp/B00ICN066A">
-	<img alt="Qries" src="images/sapiens.JPG"
-	width="333" height="333">
-	</a>
-
-	<h2>MAKING MILLIONS of mistakes</h2>
-	<h3>Learning investment strategies<h3>
-	<a href="https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari-ebook/dp/B00ICN066A">
-	<img alt="Qries" src="images/money.jpeg"
-	width="333" height="333">
-	</a>
-
-	<h2>Filling boxes like tetris</h2>
-	<h3>Fit things into anything with this algorithom<h3>
-	<a href="https://github.com/ljsimpkin/Fillit">
-	<img alt="Qries" src="images/fillit.JPG"
-	width="333" height="333">
-	</a>
-
-	<h2>Golf Work</h2>
-	<h3>Sometimes dodging golf balls<h3>
-	<a href="https://www.google.com/search?q=baylands+golf+course&sxsrf=ALeKk0253d6niHoceM_OZ45ZodGYRI6Q2w:1591161760179&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjakfu78-TpAhXfH7cAHYRyC6QQ_AUoAnoECBQQBA&biw=1280&bih=672">
-	<img alt="Qries" src="images/golf.jpg"
-	width="333" height="420">
-	</a>
-
-	<h2>Sumo in Japan</h2>
-	<h3>Also pretty big<h3>
-	<a href="https://github.com/ljsimpkin/Fillit">
-	<img alt="Qries" src="images/sumo.JPG"
-	width="400" height="333">
-	</a>
-
-	<h2>Finance</h2>
-	<h3>Studying finance at uni and learning how black scholes really is<h3>
-	<a href="https://www.google.com/search?q=Fischer+Black,+Myron+Scholes&sxsrf=ALeKk01oeMjs60_60VSTnLU2XOJTs3jByw:1591162420169&source=lnms&tbm=isch&sa=X&ved=2ahUKEwip1dX29eTpAhWD8HMBHbqLDX4Q_AUoAXoECAwQAw&biw=1280&bih=672">
-	<img alt="Qries" src="images/finc.PNG"
-	width="500" height="333">
-	</a>
-
-	<h2>Fixing Things</h2>
-	<h3>Changin phone screen, updating laptop, and sweatproofing headphones<h3>
-	<a href="https://github.com/ljsimpkin/Fillit">
-	<img alt="Qries" src="images/fix.JPG"
-	width="333" height="333">
-	</a>
-
-	<h2>Table Tennis</h2>
-	<h3>Self appointed table tennis champ<h3>
-	<a href="https://github.com/ljsimpkin/Fillit">
-	<img alt="Qries" src="images/1.JPG"
-	width="333" height="333">
-	</a>
-
-	<h2>Gymming</h2>
-	<h3>Using whatevers there in the name of gains<h3>
-	<a href="https://github.com/ljsimpkin/Fillit">
-	<img alt="Qries" src="images/gym.png"
-	width="333" height="233">
-	</a>
-
-	<h2>Bartending</h2>
-	<h3>Would you like your magereta salted or unsalted?<h3>
-	<a href="https://www.lonestar.co.nz/">
-	<img alt="Qries" src="images/drink.jpg"
-	width="333" height="333">
-	</a>
-
-	<h2>Milking</h2>
-	<h3>Providing that calcium<h3>
-	<a href="https://github.com/ljsimpkin/Fillit">
-	<img alt="Qries" src="images/cows.JPG"
-	width="333" height="333">
-	</a>
-
-	<h2>Flatting</h2>
-	<h3>Gordon Ramsay in the house!<h3>
-	<a href="https://github.com/ljsimpkin/Fillit">
-	<img alt="Qries" src="images/food.JPG"
-	width="333" height="333">
-	</a>
-
-	<h2>Landscape Gardening</h2>
-	<h3>Holes aren't gonna dig themselves<h3>
-	<a href="https://github.com/ljsimpkin/Fillit">
-	<img alt="Qries" src="images/hole.JPG"
-	width="333" height="333">
-	</a>
-
-	<h2>Painting and Graphics</h2>
-	<h3>What is art? 1st place art and graphics award<h3>
-	<a href="https://sacredheart.school.nz/">
-	<img alt="Qries" src="images/art.JPG"
-	width="333" height="333">
-	</a>
-
-	<h2>Grand Canyon Road Trip</h2>
-	<h3>It's pretty big<h3>
-	<a href="https://github.com/ljsimpkin/Fillit">
-	<img alt="Qries" src="images/gcdrawing.JPG"
-	width="333" height="333">
-	</a>
+for (i = 0; i < projects.length; i++) {
+  clon.getElementById("title").innerHTML = projects[shuff[i]]['title'];
+  clon.getElementById("description").innerHTML = projects[shuff[i]]['description'];
+  clon.getElementById("url").href= projects[shuff[i]]['url']
+  clon.getElementById("src").src= projects[shuff[i]]['src']
+  document.body.appendChild(clon);
+  clon = temp.content.cloneNode(true);
+}
+</script>
 
 </body>
 </html>
