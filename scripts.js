@@ -26,6 +26,6 @@ for (i = 0; i < projects.length; i++) {
   clon.getElementById("description").innerHTML = projects[shuff[i]]['description'];
   clon.getElementById("url").href= projects[shuff[i]]['url']
   clon.getElementById("src").src= projects[shuff[i]]['src']
-  document.body.appendChild(clon);
+  document.getElementById("add_after_me").appendChild(clon);
   clon = temp.content.cloneNode(true);
 }
