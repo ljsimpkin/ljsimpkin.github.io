@@ -1,7 +1,50 @@
-img {
-  opacity: 1;
-}
-
 img:hover {
   opacity: 0.7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: auto; 
+}
+
+
+/*   Should be removed. Only for demonstration 
+}*/
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+div.post {
+  margin: 10px;
+  border: 1px solid #ccc;
+  float: center;
+  width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0 16px;
+}
+
+div.post:hover {
+  border: 1px solid #777;
+}
+
+div.post img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
