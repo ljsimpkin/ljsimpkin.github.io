@@ -24,8 +24,8 @@ console.log(shuff)
 for (i = 0; i < projects.length; i++) {
   clon.getElementById("title").innerHTML = projects[shuff[i]]['title'];
   clon.getElementById("description").innerHTML = projects[shuff[i]]['description'];
-  clon.getElementById("url").href= projects[shuff[i]]['url']
-  clon.getElementById("src").src= projects[shuff[i]]['src']
+  clon.getElementById("url").href = projects[shuff[i]]['url']
+  clon.getElementById("src").src = projects[shuff[i]]['src']
   document.getElementById("add_after_me").appendChild(clon);
   clon = temp.content.cloneNode(true);
 }
