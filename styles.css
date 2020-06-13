@@ -1,8 +1,13 @@
-h1 {
-font-family: Georgia, sans-serif;
-font-size: 0em;
-letter-spacing: -2px;
-text-align: center;
+body {
+  font-family: Arial;
+}
+
+.header {
+  padding-left: 30px;
+  padding-top: 5px;
+  color: white;
+  font-size: 30px;
+  letter-spacing: -2px;
 }
 
 .masonry-item:hover {
