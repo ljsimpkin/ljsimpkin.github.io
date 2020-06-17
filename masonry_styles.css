@@ -131,15 +131,20 @@ body {
 .masonry-item {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 17px;
+  margin-bottom: 40px;
 }
-@media only screen and (max-width: 1023px) and (min-width: 666px) {  .masonry {
+@media only screen and (max-width: 1023px) and (min-width: 981px) {  .masonry {
     columns: 2;
   }
 }
 @media only screen and (min-width: 1024px) {
   .masonry {
     columns: 3;
+  }
+  .masonry-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 17px;
   }
 }
 .masonry-item, .masonry-content {
