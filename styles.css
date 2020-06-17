@@ -18,12 +18,29 @@ body {
 
 .masonry-title {
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 2.5rem;
   padding: 1rem 1.5rem;
 }
 .masonry-description {
   padding: 1.5rem;
   padding-top:0;
-  font-size: 1rem;
+  font-size: 1.7rem;
   border-top: 1px solid rgba(0, 0, 0, .05);
+}
+
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    columns: 3;
+  }
+  .masonry-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
+  }
+  .masonry-description {
+    padding: 1.5rem;
+    padding-top:0;
+    font-size: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+  }
 }
