@@ -133,10 +133,10 @@ body {
   vertical-align: top;
   margin-bottom: 17px;
 }
-/*@media only screen and (max-width: 1023px) and (min-width: 600px) {  .masonry {
+@media only screen and (max-width: 1023px) and (min-width: 666px) {  .masonry {
     columns: 2;
   }
-}*/
+}
 @media only screen and (min-width: 1024px) {
   .masonry {
     columns: 3;
