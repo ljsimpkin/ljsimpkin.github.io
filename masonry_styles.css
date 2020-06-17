@@ -133,7 +133,7 @@ body {
   vertical-align: top;
   margin-bottom: 17px;
 }
-@media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
+/*@media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
     columns: 2;
   }
 }
@@ -141,7 +141,7 @@ body {
   .masonry {
     columns: 3;
   }
-}
+}*/
 .masonry-item, .masonry-content {
   border-radius: 30px;
   overflow: hidden;
