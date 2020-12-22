@@ -316,7 +316,7 @@ var projects = [
  },
  {
    "title": "Sapiens",
-   "description": "Challenge every idea that you've ever had",
+   "description": "Challenge every idea you've ever had",
    "url": "https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari-ebook/dp/B00ICN066A",
    "src": "images/sapiens.JPG",
    "src2": "",
@@ -448,5 +448,32 @@ var projects = [
    "src2": "",
    "src3": "",
    "src4": ""
- }
+ },
+ {
+   "title": "Dolomites Biking",
+   "description": "5 day road cycling and mountain biking the Dolomites",
+   "url": "https://www.google.com/search?q=the+dolomites&rlz=1C5CHFA_enGB929GB929&sxsrf=ALeKk02KQKitQQdslhkY_lYeicQpU6FIIw:1608643795888&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi1iZiQ2eHtAhXBnFwKHSQzC3cQ_AUoAnoECBMQBA",
+   "src": "images/dolomites.jpeg",
+   "src2": "",
+   "src3": "",
+   "src4": ""
+ },
+ {
+   "title": "Tripping Italy",
+   "description": "16 days exploring Sicily, Naples, and Rome",
+   "url": "https://www.google.com/search?q=the+dolomites&rlz=1C5CHFA_enGB929GB929&sxsrf=ALeKk02KQKitQQdslhkY_lYeicQpU6FIIw:1608643795888&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi1iZiQ2eHtAhXBnFwKHSQzC3cQ_AUoAnoECBMQBA",
+   "src": "images/Italy.jpeg",
+   "src2": "",
+   "src3": "",
+   "src4": ""
+ },
+ {
+   "title": "Money Motivate",
+   "description": "Building an app that helps you stay focused. #Smart_Contracts #Blockchain #Buzzy_Buzzwords",
+   "url": "https://ljsimpkin.github.io/web_test/",
+   "src": "images/LogoDraft.png",
+   "src2": "",
+   "src3": "",
+   "src4": ""
+}
 ]
